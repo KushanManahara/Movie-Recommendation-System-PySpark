@@ -17,12 +17,17 @@ This project implements a movie recommendation system using PySpark, leveraging 
 To run the PySpark Movie Recommendation System locally, follow these steps:
 
 1. Clone the repository to your local machine:
-```git clone https://github.com/your_username/your_repo_name.git```
+
+```bash
+git clone https://github.com/your_username/your_repo_name.git
+```
 
 
-2. Install the required dependencies:
-`pip install pyspark`
+3. Install the required dependencies:
 
+```bash
+pip install pyspark
+```
 
 
 ## 🛠️ Getting Started
@@ -43,6 +48,7 @@ To use the PySpark Movie Recommendation System, follow these steps:
 1. Prepare your movie ratings dataset in CSV format.
 2. Replace the path to your dataset in the `main.py` file:
 
+
 ```python
 df = spark.read.csv('path/to/your/dataset.csv', inferSchema=True, header=True)
 ```
@@ -51,8 +57,9 @@ df = spark.read.csv('path/to/your/dataset.csv', inferSchema=True, header=True)
 
 4. Run the main script to execute the recommendation system:
 
-
-`python main.py`
+```bash
+python main.py
+```
 
 5. The system will process the dataset, train the recommendation model, evaluate its performance, and provide personalized movie recommendations.
 
